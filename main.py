@@ -4,10 +4,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
-user_path = '/home/vsafonkin/'
-df = pd.read_csv(user_path + 'stocks.csv')
+user_path = '.'
+df = pd.read_csv(user_path + '/stocks.csv')
 
-c = canvas.Canvas(user_path + 'example.pdf', pagesize=A4)
+c = canvas.Canvas(user_path + '/example.pdf', pagesize=A4)
 c.setTitle('Example PDF')
 c.drawString(100, 750, "Hello, PDF!")
 
